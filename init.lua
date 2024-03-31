@@ -117,6 +117,8 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
+vim.opt.cin = true
+-- vim.opt.cino = {}
 
 -- Save undo history
 vim.opt.undofile = true
