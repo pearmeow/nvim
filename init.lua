@@ -117,11 +117,6 @@ vim.opt.clipboard = ''
 
 -- Enable break indent
 vim.opt.breakindent = true
-vim.opt.cin = true
-vim.opt.cino = ''
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.pumheight = 10
 
 -- Save undo history
 vim.opt.undofile = true
@@ -158,6 +153,14 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- NOTE: The Pear Options
+
+vim.opt.cin = true
+vim.opt.cino = ''
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.pumheight = 10
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -677,7 +680,7 @@ require('lazy').setup({
           end,
         },
         completion = { completeopt = 'menu,menuone,noinsert' },
-
+        view = { docs = { auto_open = false } },
         -- For an understanding of why these mappings were
         -- chosen, you will need to read `:help ins-completion`
         --
@@ -725,9 +728,9 @@ require('lazy').setup({
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
         sources = {
-          { name = 'nvim_lsp' },
+          { name = 'nvim_lsp', max_item_count = 10 },
           { name = 'luasnip' },
-          { name = 'path' },
+          { name = 'path', max_item_count = 5 },
         },
       }
     end,
