@@ -156,8 +156,6 @@ vim.opt.scrolloff = 10
 
 -- NOTE: The Pear Options
 
-vim.opt.cin = true
-vim.opt.cino = ''
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.pumheight = 10
