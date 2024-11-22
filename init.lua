@@ -160,7 +160,7 @@ vim.opt.scrolloff = 10
 vim.opt.cindent = true
 vim.opt.cinoptions = ''
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 4
 vim.opt.pumheight = 10
 
 -- [[ Basic Keymaps ]]
@@ -552,6 +552,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {},
+        basedpyright = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
