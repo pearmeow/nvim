@@ -29,7 +29,6 @@ vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
-vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -106,10 +105,10 @@ vim.o.confirm = true
 
 -- NOTE: My preferences
 
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.shiftwidth = 4
 
--- To set a max height on autocompletions
+-- To set a max height on autocompletions (looks unneeded)
 -- vim.opt.pumheight = 10
 
 -- [[ Basic Keymaps ]]
