@@ -110,7 +110,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 
 -- To set a max height on autocompletions
-vim.opt.pumheight = 10
+-- vim.opt.pumheight = 10
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -935,6 +935,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.neo-tree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
