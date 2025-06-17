@@ -31,6 +31,11 @@ vim.g.maplocalleader = ' '
 -- Current nerd font is part of the JetBrains family
 vim.g.have_nerd_font = true
 
+-- Require looks inside the lua folder for paths so including
+-- lua before options would imply lua/lua/options.lua exists
+-- which is incorrect. Also, don't include .lua at the end of the
+-- filename because it is implied.
+
 -- Load options.lua file in lua directory
 require 'options'
 
