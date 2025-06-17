@@ -54,10 +54,12 @@ require('lazy').setup({
 
   -- Filetree with shortcut
   require 'plugins.neo-tree',
+
+  require 'plugins.autopairs',
+
+  require 'plugins.indent_line',
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
-  -- require 'plugins.autopairs',
   -- require 'plugins.debug',
-  -- require 'plugins.indent_line',
   -- require 'plugins.lint',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
