@@ -21,17 +21,22 @@
 
 require('lazy').setup({
 
+  -- Indent lines
   require 'plugins.guess-indent',
 
+  -- Git integration
   require 'plugins.gitsigns',
 
+  -- Reminder for key maps and what they do
   require 'plugins.which-key',
 
+  -- Find files & other things easily
   require 'plugins.telescope',
 
-  -- LSP Plugins
+  -- Lua LSP
   require 'plugins.lazydev',
 
+  -- LSPs
   require 'plugins.lspconfig',
 
   -- Autoformat
@@ -55,12 +60,16 @@ require('lazy').setup({
   -- Filetree with shortcut
   require 'plugins.neo-tree',
 
+  -- Pair parens & brackets
   require 'plugins.autopairs',
 
+  -- Visible indentation lines
   require 'plugins.indent_line',
-  --  Uncomment any of the lines below to enable them (you will need to restart nvim).
-  -- require 'plugins.debug',
+
   -- require 'plugins.lint',
+
+  -- Debug adapter protocol, which is unnecessary for now
+  -- require 'plugins.debug',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
