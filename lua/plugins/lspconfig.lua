@@ -105,7 +105,7 @@ return {
           if vim.fn.has 'nvim-0.11' == 1 then
             return client:supports_method(method, bufnr)
           else
-            -- This line seems to be for compatibility for older nvim versions so the diagnostic is disabled
+            -- This line is for compatibility for older nvim versions so the diagnostic is disabled
             ---@diagnostic disable-next-line
             return client.supports_method(method, { bufnr = bufnr })
           end
