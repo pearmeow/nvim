@@ -51,5 +51,9 @@ require 'lazy-bootstrap'
 -- Makes Lazy set up plugins depending on their options in the plugins folder
 require 'lazy-plugins'
 
+-- Load autocmds.lua file in lua directory
+-- Includes only an autocmd to automatically template c files
+require 'autocmds'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
