@@ -201,6 +201,7 @@ return {
       emmet_language_server = {},
       cssls = {},
       ts_ls = {},
+      html = {},
       -- basedpyright = {},
       -- gopls = {},
       -- pyright = {},
