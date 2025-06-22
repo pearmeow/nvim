@@ -5,10 +5,8 @@
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- Easier pasting with <leader> (currently space) instead of "+ prefix
-vim.keymap.set('n', '<leader>y', '"+y')
-vim.keymap.set('n', '<leader>p', '"+p')
-vim.keymap.set('n', '<leader>P', '"+P')
+-- Easier system clipboard with <leader>c instead of "+ prefix
+vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [C]lipboard' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
