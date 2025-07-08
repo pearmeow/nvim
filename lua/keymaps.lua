@@ -11,6 +11,12 @@ vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [C]lipboard' })
 -- Maps the = operator to use the lsp format
 vim.keymap.set('n', '=', 'gq')
 
+-- Maps s to be ` because s is pretty useless
+vim.keymap.set('n', 's', '`')
+
+-- Maps S to be ^ because S is also pretty useless, and S = start of line
+vim.keymap.set('n', 'S', '^')
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
