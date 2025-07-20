@@ -202,6 +202,7 @@ return {
       cssls = {},
       ts_ls = {},
       html = {},
+      jsonls = {},
       -- basedpyright = {},
       -- gopls = {},
       -- pyright = {},
