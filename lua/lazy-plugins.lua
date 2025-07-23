@@ -66,6 +66,9 @@ require('lazy').setup({
   -- Visible indentation lines
   require 'plugins.indent_line',
 
+  -- Smooth scrolling
+  require 'plugins.neoscroll',
+
   -- require 'plugins.lint',
 
   -- Debug adapter protocol, which is unnecessary for now
