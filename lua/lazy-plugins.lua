@@ -69,6 +69,9 @@ require('lazy').setup({
   -- Smooth scrolling
   require 'plugins.neoscroll',
 
+  -- Smear cursor (unnecessary but seems cool)
+  require 'plugins.smear-cursor',
+
   -- require 'plugins.lint',
 
   -- Debug adapter protocol, which is unnecessary for now
