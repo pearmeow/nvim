@@ -8,5 +8,6 @@ return {
     damping = 0.8, -- 0.65     [0, 1]
     damping_insert_mode = 0.8, -- 0.7      [0, 1]
     distance_stop_animating = 0.5, -- 0.1      > 0
+    time_interval = 7, -- milliseconds between draws, default 17
   },
 }
