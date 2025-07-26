@@ -72,7 +72,8 @@ require('lazy').setup({
   -- Smear cursor (unnecessary but seems cool)
   require 'plugins.smear-cursor',
 
-  -- require 'plugins.lint',
+  -- Linting
+  require 'plugins.lint',
 
   -- Debug adapter protocol, which is unnecessary for now
   -- require 'plugins.debug',
