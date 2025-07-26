@@ -6,11 +6,7 @@ return {
       '<C-d>',
       '<C-b>',
       '<C-f>',
-      '<C-y>',
-      '<C-e>',
-      'zt',
       'zz',
-      'zb',
     },
     hide_cursor = true, -- Hide cursor while scrolling
     stop_eof = true, -- Stop at <EOF> when scrolling downwards
@@ -19,7 +15,9 @@ return {
     duration_multiplier = 0.4, -- Global duration multiplier
     easing = 'sine', -- Default easing function
     pre_hook = nil, -- Function to run before the scrolling animation starts
-    post_hook = nil, -- Function to run after the scrolling animation ends
+    post_hook = function() -- Function to run after the scrolling animation ends
+      vim.cmd 'normal! zz'
+    end,
     performance_mode = false, -- Disable "Performance Mode" on all buffers.
     ignored_events = { -- Events ignored while scrolling
       'WinScrolled',
