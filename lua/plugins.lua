@@ -69,6 +69,9 @@ require('lazy').setup({
   -- Animated cursor + smear trail
   require 'plugins.smear-cursor',
 
+  -- Discord rich presence
+  require 'plugins.presence',
+
   -- Linting
   require 'plugins.lint',
 
