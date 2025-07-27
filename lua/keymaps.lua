@@ -17,6 +17,14 @@ vim.keymap.set('n', 's', '`')
 -- Maps S to be ^ because S is also pretty useless, and S = start of line
 vim.keymap.set('n', 'S', '^')
 
+-- Center things when jumping around
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-f>', '<C-f>zz')
+vim.keymap.set('n', '<C-b>', '<C-b>zz')
+vim.keymap.set('n', 'n', 'nzz')
+vim.keymap.set('n', 'N', 'Nzz')
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 

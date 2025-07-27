@@ -66,16 +66,13 @@ require('lazy').setup({
   -- Visible indentation lines
   require 'plugins.indent_line',
 
-  -- Smooth scrolling
-  require 'plugins.neoscroll',
-
-  -- Smear cursor (unnecessary but seems cool)
+  -- Animated cursor + smear trail
   require 'plugins.smear-cursor',
 
   -- Linting
   require 'plugins.lint',
 
-  -- Debug adapter protocol, which is unnecessary for now
+  -- Debug adapter protocol
   -- require 'plugins.debug',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
