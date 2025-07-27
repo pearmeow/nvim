@@ -24,6 +24,10 @@ vim.keymap.set('n', '<C-f>', '<C-f>zz')
 vim.keymap.set('n', '<C-b>', '<C-b>zz')
 vim.keymap.set('n', 'n', 'nzz')
 vim.keymap.set('n', 'N', 'Nzz')
+vim.keymap.set('n', '<C-i>', '<C-i>zz')
+vim.keymap.set('n', '<C-o>', '<C-o>zz')
+vim.keymap.set('n', 'gg', 'ggzz')
+vim.keymap.set('n', 'G', 'Gzz')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
