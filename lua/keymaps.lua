@@ -11,10 +11,10 @@ vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [c]lipboard' })
 -- Maps the = operator to use the lsp format
 vim.keymap.set('n', '=', 'gq')
 
--- Maps s to be ` because s is pretty useless
-vim.keymap.set('n', 's', '`')
+-- Maps s to be update aka [s]ave if changed
+vim.keymap.set('n', 's', ':update<CR>')
 
--- Maps S to be ^ because S is also pretty useless, and S = start of line
+-- Maps S to be ^ for [S]tart of line
 vim.keymap.set('n', 'S', '^')
 
 -- Center things when jumping around
