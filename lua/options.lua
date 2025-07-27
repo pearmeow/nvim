@@ -74,6 +74,3 @@ vim.o.confirm = true
 -- Replace tabs with 4 spaces
 vim.o.expandtab = true
 vim.o.shiftwidth = 4
-
--- To set a max height on autocompletions (looks unneeded)
--- vim.opt.pumheight = 10
