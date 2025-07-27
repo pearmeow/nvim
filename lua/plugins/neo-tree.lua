@@ -28,7 +28,15 @@ return {
       window = {
         mappings = {
           ['\\'] = 'close_window',
+          ['l'] = 'open',
+          ['h'] = 'close_node',
+          ['<space>'] = 'none',
         },
+      },
+    },
+    default_component_configs = {
+      indent = {
+        with_expanders = true,
       },
     },
   },
