@@ -78,6 +78,9 @@ require('lazy').setup({
   -- Undo tree
   require 'plugins.undotree',
 
+  -- Git integration
+  require 'plugins.vim-fugitive',
+
   -- Debug adapter protocol
   -- require 'plugins.debug',
 
