@@ -76,7 +76,7 @@ require('lazy').setup({
   require 'plugins.lint',
 
   -- Debug adapter protocol
-  -- require 'plugins.debug',
+  require 'plugins.debug',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!

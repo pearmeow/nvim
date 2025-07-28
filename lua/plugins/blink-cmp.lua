@@ -27,7 +27,10 @@ return {
         --   end,
         -- },
       },
-      opts = {},
+      opts = {
+        region_check_events = 'CursorHold,InsertLeave,InsertEnter',
+        delete_check_events = 'TextChanged,InsertEnter',
+      },
     },
     'folke/lazydev.nvim',
   },
