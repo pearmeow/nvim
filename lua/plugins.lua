@@ -75,6 +75,9 @@ require('lazy').setup({
   -- Linting
   require 'plugins.lint',
 
+  -- Undo tree
+  require 'plugins.undotree',
+
   -- Debug adapter protocol
   -- require 'plugins.debug',
 
