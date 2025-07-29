@@ -81,6 +81,9 @@ require('lazy').setup({
   -- Git integration
   require 'plugins.vim-fugitive',
 
+  -- Tab out of parens and other similar syntax
+  require 'plugins.tabout',
+
   -- Debug adapter protocol
   -- require 'plugins.debug',
 
