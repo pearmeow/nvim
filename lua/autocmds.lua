@@ -12,7 +12,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- For now there is only an autocommand for cpp templates
+vim.api.nvim_create_autocmd({ 'InsertEnter' }, {
+  group = vim.api.nvim_create_augroup('diagnostics', { clear = true }),
+  callback = function()
+    vim.diagnostic.hide()
+  end,
+})
+
+-- Templates
 local template_group = vim.api.nvim_create_augroup('templates', { clear = true })
 vim.api.nvim_create_autocmd({ 'BufNewFile' }, {
   group = template_group,
