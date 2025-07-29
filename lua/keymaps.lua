@@ -8,7 +8,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Easier system clipboard with <leader>c instead of "+ prefix
 vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [c]lipboard' })
 
--- Maps the = operator to use the lsp format
+-- Maps the = operator to use lsp formatting
 vim.keymap.set('n', '=', 'gq')
 
 -- Maps s to be update aka [s]ave if changed
@@ -61,16 +61,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
--- [[ Basic Autocommands ]]
---  See `:help lua-guide-autocommands`
-
--- Highlight when yanking (copying) text
---  Try it with `yap` in normal mode
---  See `:help vim.hl.on_yank()`
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.hl.on_yank()
-  end,
-})
+-- Insert mode
+-- Disable copying from line below with C-e as it interferes (mentally) with some other binds
+vim.keymap.set('i', '<C-e>', '')
