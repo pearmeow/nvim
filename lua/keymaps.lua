@@ -9,7 +9,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [c]lipboard' })
 
 -- Maps the = operator to use lsp formatting
-vim.keymap.set('n', '=', 'gq')
+-- vim.keymap.set('n', '=', 'gq')
 
 -- Maps s to be update aka [s]ave if changed
 vim.keymap.set('n', 's', ':update<CR>')
