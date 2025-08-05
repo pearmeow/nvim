@@ -1,21 +1,8 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
--- Clear highlights on search when pressing <Esc> in normal mode
---  See `:help hlsearch`
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-
 -- Easier system clipboard with <leader>c instead of "+ prefix
 vim.keymap.set('n', '<leader>c', '"+', { desc = 'System [c]lipboard' })
-
--- Maps the = operator to use lsp formatting
--- vim.keymap.set('n', '=', 'gq')
-
--- Maps s to be update aka [s]ave if changed
-vim.keymap.set('n', 's', ':update<CR>')
-
--- Maps S to be ^ for [S]tart of line
-vim.keymap.set('n', 'S', '^')
 
 -- Center things when jumping around
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
@@ -29,11 +16,12 @@ vim.keymap.set('n', '<C-o>', '<C-o>zz')
 vim.keymap.set('n', 'gg', 'ggzz')
 vim.keymap.set('n', 'G', 'Gzz')
 
-vim.keymap.set({ 'i', 's', 'n' }, '<esc>', function()
+vim.keymap.set({ 'i', 's', 'n' }, '<Esc>', function()
   if require('luasnip').expand_or_jumpable() then
     require('luasnip').unlink_current()
   end
-  return '<esc>'
+  -- Clear highlights on search when pressing <Esc> in normal mode
+  return '<Esc><cmd>nohlsearch<CR>'
 end, { expr = true })
 
 -- Diagnostic keymaps
