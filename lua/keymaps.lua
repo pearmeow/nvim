@@ -29,6 +29,13 @@ vim.keymap.set('n', '<C-o>', '<C-o>zz')
 vim.keymap.set('n', 'gg', 'ggzz')
 vim.keymap.set('n', 'G', 'Gzz')
 
+vim.keymap.set({ 'i', 's', 'n' }, '<esc>', function()
+  if require('luasnip').expand_or_jumpable() then
+    require('luasnip').unlink_current()
+  end
+  return '<esc>'
+end, { expr = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
