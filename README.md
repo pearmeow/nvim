@@ -1,4 +1,4 @@
-# kickstart.nvim
+# pearmeow's kickstart.nvim
 
 Quick start
 
@@ -15,10 +15,6 @@ External Requirements:
   - If want to write Typescript, you need `npm`
   - If want to write Golang, you will need `go`
   - etc.
-
-> **NOTE**
-> See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
-> and quick install snippets
 
 Neovim's configurations are located under the following paths, depending on your OS:
 
