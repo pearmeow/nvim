@@ -84,6 +84,12 @@ require('lazy').setup({
   -- Sneak motion
   require 'plugins.sneak',
 
+  -- Surround motion
+  require 'plugins.surround',
+
+  -- Repeat sneak and surround
+  require 'plugins.repeat',
+
   -- Tab out of parens and other similar syntax
   require 'plugins.neotab',
 
