@@ -79,7 +79,10 @@ require('lazy').setup({
   require 'plugins.undotree',
 
   -- Git integration
-  require 'plugins.vim-fugitive',
+  require 'plugins.fugitive',
+
+  -- Sneak motion
+  require 'plugins.sneak',
 
   -- Tab out of parens and other similar syntax
   require 'plugins.neotab',
