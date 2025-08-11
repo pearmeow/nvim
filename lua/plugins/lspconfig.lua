@@ -200,7 +200,6 @@ return {
       clangd = {},
       emmet_language_server = {},
       cssls = {},
-      ts_ls = {},
       html = {},
       jsonls = {},
       -- basedpyright = {},
