@@ -2,7 +2,7 @@
 --  See `:help vim.keymap.set()`
 
 -- Easier system clipboard with <leader>c instead of "+ prefix
-vim.keymap.set({'n', 'v'}, '<leader>c', '"+', { desc = 'System [c]lipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>c', '"+', { desc = 'System [c]lipboard' })
 
 -- Center things when jumping around
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
