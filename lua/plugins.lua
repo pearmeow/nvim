@@ -63,6 +63,9 @@ require('lazy').setup({
   -- Pair parens & brackets
   require 'plugins.autopairs',
 
+  -- Pair html tags and jsx
+  require 'plugins.autotag',
+
   -- Visible indentation lines
   require 'plugins.indent_line',
 
