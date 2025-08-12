@@ -46,7 +46,7 @@ require('lazy').setup({
   require 'plugins.blink-cmp',
 
   -- Color Scheme
-  require 'plugins.dracula',
+  require 'plugins.tokyonight',
 
   -- Highlight todo, notes, etc in comments
   require 'plugins.todo-comments',
