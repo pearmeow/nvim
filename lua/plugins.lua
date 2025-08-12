@@ -21,86 +21,35 @@
 
 require('lazy').setup({
 
-  -- Indent lines
-  require 'plugins.guess-indent',
+  require 'plugins.guess-indent', -- Indent lines
+  require 'plugins.gitsigns', -- Git integration
+  require 'plugins.which-key', -- Reminder for key maps and what they do
+  require 'plugins.telescope', -- Find files & other things easily
+  require 'plugins.lazydev', -- Lua LSP
+  require 'plugins.lspconfig', -- LSPs
+  require 'plugins.conform', -- Autoformat
+  require 'plugins.blink-cmp', -- Autocompletion
+  require 'plugins.tokyonight', -- Color scheme
+  require 'plugins.todo-comments', -- Highlight todo, notes, etc in comments
+  require 'plugins.mini', -- Collection of various small plugins/modules
+  require 'plugins.treesitter', -- Highlight, edit, and navigate code
+  require 'plugins.neo-tree', -- Filetree with shortcut
+  require 'plugins.autopairs', -- Pair parens and brackets
+  require 'plugins.autotag', -- Pair html tags and jsx
+  require 'plugins.indent_line', -- Visible indentation lines
+  require 'plugins.smear-cursor', -- Animated cursor + smear trail
+  require 'plugins.presence', -- Discord rich presence
+  require 'plugins.lint', -- Linting
+  require 'plugins.undotree', -- Undo tree
+  require 'plugins.fugitive', -- Git integration
+  require 'plugins.sneak', -- Sneak motion
+  require 'plugins.surround', -- Surround motion
+  require 'plugins.repeat', -- Repeat sneak and surround
+  require 'plugins.neotab', -- Tab out of parens and other similar syntax
 
-  -- Git integration
-  require 'plugins.gitsigns',
+  -- require 'plugins.tabout', -- Tab out of parens and other similar syntax
 
-  -- Reminder for key maps and what they do
-  require 'plugins.which-key',
-
-  -- Find files & other things easily
-  require 'plugins.telescope',
-
-  -- Lua LSP
-  require 'plugins.lazydev',
-
-  -- LSPs
-  require 'plugins.lspconfig',
-
-  -- Autoformat
-  require 'plugins.conform',
-
-  -- Autocompletion
-  require 'plugins.blink-cmp',
-
-  -- Color Scheme
-  require 'plugins.tokyonight',
-
-  -- Highlight todo, notes, etc in comments
-  require 'plugins.todo-comments',
-
-  -- Collection of various small independent plugins/modules
-  require 'plugins.mini',
-
-  -- Highlight, edit, and navigate code
-  require 'plugins.treesitter',
-
-  -- Filetree with shortcut
-  require 'plugins.neo-tree',
-
-  -- Pair parens & brackets
-  require 'plugins.autopairs',
-
-  -- Pair html tags and jsx
-  require 'plugins.autotag',
-
-  -- Visible indentation lines
-  require 'plugins.indent_line',
-
-  -- Animated cursor + smear trail
-  require 'plugins.smear-cursor',
-
-  -- Discord rich presence
-  require 'plugins.presence',
-
-  -- Linting
-  require 'plugins.lint',
-
-  -- Undo tree
-  require 'plugins.undotree',
-
-  -- Git integration
-  require 'plugins.fugitive',
-
-  -- Sneak motion
-  require 'plugins.sneak',
-
-  -- Surround motion
-  require 'plugins.surround',
-
-  -- Repeat sneak and surround
-  require 'plugins.repeat',
-
-  -- Tab out of parens and other similar syntax
-  require 'plugins.neotab',
-
-  -- Tab out of parens and other similar syntax
-  -- require 'plugins.tabout',
-
-  -- Debug adapter protocol
-  -- require 'plugins.debug',
+  -- require 'plugins.debug', -- Debug adapter protocol
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
