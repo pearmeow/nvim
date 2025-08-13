@@ -4,7 +4,7 @@
 --  For more options, you can see `:help option-list`
 
 -- Experimental
-require('vim._extui').enable {}
+-- require('vim._extui').enable {}
 
 -- Make line numbers default
 vim.o.number = true
