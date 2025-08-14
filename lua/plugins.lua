@@ -18,7 +18,7 @@ require('lazy').setup({
   require 'plugins.autopairs', -- Pair parens and brackets
   require 'plugins.autotag', -- Pair html tags and jsx
   require 'plugins.indent_line', -- Visible indentation lines
-  require 'plugins.smear-cursor', -- Animated cursor + smear trail
+  -- require 'plugins.smear-cursor', -- Animated cursor + smear trail
   require 'plugins.presence', -- Discord rich presence
   require 'plugins.lint', -- Linting
   require 'plugins.undotree', -- Undo tree
@@ -30,7 +30,6 @@ require('lazy').setup({
 
   -- require 'plugins.tabout', -- Tab out of parens and other similar syntax
   -- require 'plugins.debug', -- Debug adapter protocol
-
 }, {
   ui = {
     -- If using Nerd Font: set icons to an empty table which will use the
