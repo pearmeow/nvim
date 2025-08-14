@@ -49,7 +49,7 @@ require 'bootstrap'
 
 -- Load lazy-plugins.lua file in lua directory
 -- Makes Lazy set up plugins depending on their options in the plugins folder
-require 'plugins'
+require 'custom-plugins'
 
 -- Load autocmds.lua file in lua directory
 -- Includes only an autocmd to automatically template c files

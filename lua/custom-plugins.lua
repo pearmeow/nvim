@@ -27,6 +27,7 @@ require('lazy').setup({
   require 'plugins.surround', -- Surround motion
   require 'plugins.repeat', -- Repeat sneak and surround
   require 'plugins.neotab', -- Tab out of parens and other similar syntax
+  require 'plugins.context',
 
   -- require 'plugins.tabout', -- Tab out of parens and other similar syntax
   -- require 'plugins.debug', -- Debug adapter protocol
