@@ -27,9 +27,7 @@ require('lazy').setup({
   require 'plugins.repeat', -- Repeat sneak and surround
   require 'plugins.neotab', -- Tab out of parens and other similar syntax
   require 'plugins.context',
-
-  -- require 'plugins.tabout', -- Tab out of parens and other similar syntax
-  -- require 'plugins.debug', -- Debug adapter protocol
+  require 'plugins.debug', -- Debug adapter protocol
 }, {
   ui = {
     -- If using Nerd Font: set icons to an empty table which will use the
