@@ -13,6 +13,7 @@ return {
   dependencies = {
     -- Creates a beautiful debugger UI
     'rcarriga/nvim-dap-ui',
+    'theHamsta/nvim-dap-virtual-text',
 
     -- Required dependency for nvim-dap-ui
     'nvim-neotest/nvim-nio',
@@ -79,6 +80,9 @@ return {
   config = function()
     local dap = require 'dap'
     local dapui = require 'dapui'
+    require('nvim-dap-virtual-text').setup {
+      virt_text_pos = 'eol',
+    }
 
     require('mason-nvim-dap').setup {
       -- Makes a best effort to setup the various debuggers with
@@ -133,6 +137,7 @@ return {
     dap.listeners.after.event_initialized['dapui_config'] = dapui.open
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
+
     dap.adapters['pwa-node'] = {
       type = 'server',
       host = 'localhost',
@@ -142,14 +147,24 @@ return {
         args = { '${port}' },
       },
     }
-    dap.configurations['javascript'] = {
-      {
-        type = 'pwa-node',
-        request = 'launch',
-        name = 'Launch file',
-        program = '${file}',
-        cwd = '${workspaceFolder}',
-      },
-    }
+    local js_based_langs = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact' }
+    for _, language in ipairs(js_based_langs) do
+      dap.configurations[language] = {
+        {
+          type = 'pwa-node',
+          request = 'launch',
+          name = 'Launch file',
+          program = '${file}',
+          cwd = '${workspaceFolder}',
+        },
+        {
+          type = 'pwa-node',
+          request = 'attach',
+          name = 'Attach',
+          processId = require('dap.utils').pick_process,
+          cwd = '${workspaceFolder}',
+        },
+      }
+    end
   end,
 }
