@@ -19,6 +19,16 @@ vim.api.nvim_create_autocmd({ 'InsertEnter' }, {
   end,
 })
 
+-- ejs
+local ejs_group = vim.api.nvim_create_augroup('ejs', { clear = true })
+vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
+  group = ejs_group,
+  pattern = {
+    '*.ejs',
+  },
+  command = 'set ft=html',
+})
+
 -- Templates
 local template_group = vim.api.nvim_create_augroup('templates', { clear = true })
 vim.api.nvim_create_autocmd({ 'BufNewFile' }, {

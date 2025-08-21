@@ -79,10 +79,3 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 
 vim.o.backupcopy = 'yes'
-
--- Recognize ejs as html
-vim.filetype.add {
-  pattern = {
-    ['*.ejs'] = 'html',
-  },
-}
