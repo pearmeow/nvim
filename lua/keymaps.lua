@@ -59,3 +59,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Insert mode
 -- Disable copying from line below with C-e as it interferes (mentally) with some other binds
 vim.keymap.set('i', '<C-e>', '')
+
+-- Toggle diagnostics
+vim.keymap.set('n', '<leader>d', function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = 'Toggle diagnostics' })
