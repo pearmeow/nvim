@@ -203,7 +203,7 @@ return {
       html = {},
       jsonls = {},
       prismals = {},
-      ruby_lsp = {},
+      solargraph = {},
       -- basedpyright = {},
       -- gopls = {},
       -- pyright = {},
