@@ -204,7 +204,6 @@ return {
       jsonls = {},
       prismals = {},
       solargraph = {},
-      commitlint = {},
       -- basedpyright = {},
       -- gopls = {},
       -- pyright = {},
@@ -252,6 +251,7 @@ return {
       'stylua', -- Used to format Lua code
       'prettierd', -- Formatter for js
       'eslint_d', -- Linter for js
+      'commitlint',
       'js-debug-adapter',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }

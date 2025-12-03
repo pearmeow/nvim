@@ -8,6 +8,7 @@ return {
       lint.linters_by_ft = {
         javascript = { 'eslint_d' },
         javascriptreact = { 'eslint_d' },
+        gitcommit = { 'commitlint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
