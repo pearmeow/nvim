@@ -204,6 +204,7 @@ return {
       jsonls = {},
       prismals = {},
       solargraph = {},
+      jdtls = {},
       -- basedpyright = {},
       -- gopls = {},
       -- pyright = {},
