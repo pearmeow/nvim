@@ -28,6 +28,7 @@ require('lazy').setup({
   require 'plugins.neotab', -- Tab out of parens and other similar syntax
   require 'plugins.context',
   require 'plugins.debug', -- Debug adapter protocol
+  require 'plugins.neogen', -- Documentation generator
 }, {
   ui = {
     -- If using Nerd Font: set icons to an empty table which will use the
