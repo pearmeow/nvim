@@ -38,7 +38,7 @@ return {
       -- You can use 'stop_after_first' to run the first available formatter from the list
     },
     format_after_save = function(bufnr) -- instead of formatting on save, format after save asynchronously
-      local disable_filetypes = { html = true }
+      local disable_filetypes = { java = true, html = true }
       if disable_filetypes[vim.bo[bufnr].filetype] then
         return nil
       end
