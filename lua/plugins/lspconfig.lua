@@ -252,6 +252,7 @@ return {
       'prettierd', -- Formatter for js
       'eslint_d', -- Linter for js
       'js-debug-adapter',
+      'markdownlint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
