@@ -13,7 +13,7 @@ require('lazy').setup({
   require 'plugins.tokyonight', -- Color scheme
   require 'plugins.todo-comments', -- Highlight todo, notes, etc in comments
   require 'plugins.mini', -- Collection of various small plugins/modules
-  require 'plugins.treesitter', -- Highlight, edit, and navigate code
+  -- require 'plugins.treesitter', -- Highlight, edit, and navigate code
   require 'plugins.neo-tree', -- Filetree with shortcut
   require 'plugins.autopairs', -- Pair parens and brackets
   require 'plugins.autotag', -- Pair html tags and jsx
