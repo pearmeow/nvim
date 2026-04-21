@@ -16,7 +16,7 @@ require('lazy').setup({
   -- require 'plugins.treesitter', -- Highlight, edit, and navigate code
   require 'plugins.neo-tree', -- Filetree with shortcut
   require 'plugins.autopairs', -- Pair parens and brackets
-  require 'plugins.autotag', -- Pair html tags and jsx
+  -- require 'plugins.autotag', -- Pair html tags and jsx
   require 'plugins.indent_line', -- Visible indentation lines
   require 'plugins.presence', -- Discord rich presence
   require 'plugins.lint', -- Linting
