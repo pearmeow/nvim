@@ -18,7 +18,7 @@ require('lazy').setup({
   require 'plugins.autopairs', -- Pair parens and brackets
   -- require 'plugins.autotag', -- Pair html tags and jsx
   require 'plugins.indent_line', -- Visible indentation lines
-  require 'plugins.presence', -- Discord rich presence
+  -- require 'plugins.presence', -- Discord rich presence
   require 'plugins.lint', -- Linting
   require 'plugins.undotree', -- Undo tree
   require 'plugins.fugitive', -- Git integration
